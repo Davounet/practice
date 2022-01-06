@@ -10,6 +10,13 @@
         <pre class="text-xs">{{ content }}</pre>
       </div>
     </div>
+
+    <div class="mt-2 overflow-y-auto rounded-lg bg-gray-50 max-h-80">
+      <div class="px-4 py-5 sm:p-6">
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div class="prose" v-html="content" />
+      </div>
+    </div>
   </div>
 </template>
 
